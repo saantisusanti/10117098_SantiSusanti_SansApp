@@ -1,5 +1,9 @@
 package com.santisusanti.a10117098_santisusanti_sansapp
-
+/* Tanggal Pengerjaan : 10-11 Mei 2020
+    Nama              : Santi Susanti
+    NIM               : 10117098
+    Kelas             : IF-3
+ */
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

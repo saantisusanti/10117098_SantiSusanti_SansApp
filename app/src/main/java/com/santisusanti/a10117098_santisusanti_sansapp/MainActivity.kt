@@ -1,4 +1,9 @@
 package com.santisusanti.a10117098_santisusanti_sansapp
+/* Tanggal Pengerjaan : 10-13 Mei 2020
+    Nama              : Santi Susanti
+    NIM               : 10117098
+    Kelas             : IF-3
+ */
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -47,7 +52,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent);
                 Toast.makeText(this,"Contacts", Toast.LENGTH_SHORT).show()
             }
-            R.id.friend -> {Toast.makeText(this,"Friend Clicked", Toast.LENGTH_SHORT).show()
+            R.id.friend -> {
+                val intent = Intent(this, FriendList::class.java)
+                startActivity(intent)
+                Toast.makeText(this,"Friend Clicked", Toast.LENGTH_SHORT).show()
             }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
