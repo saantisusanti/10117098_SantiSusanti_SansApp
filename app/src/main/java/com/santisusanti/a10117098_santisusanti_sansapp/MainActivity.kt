@@ -1,5 +1,6 @@
 package com.santisusanti.a10117098_santisusanti_sansapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -36,9 +37,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-            R.id.homee -> {Toast.makeText(this,"Home clicked", Toast.LENGTH_SHORT).show()
+            R.id.homee -> {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent);
+                Toast.makeText(this,"Home clicked", Toast.LENGTH_SHORT).show()
             }
-            R.id.social -> {Toast.makeText(this,"Contacts", Toast.LENGTH_SHORT).show()
+            R.id.social -> {
+                val intent = Intent(this, Contact::class.java)
+                startActivity(intent);
+                Toast.makeText(this,"Contacts", Toast.LENGTH_SHORT).show()
             }
             R.id.friend -> {Toast.makeText(this,"Friend Clicked", Toast.LENGTH_SHORT).show()
             }

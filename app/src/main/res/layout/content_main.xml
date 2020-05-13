@@ -35,12 +35,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         tools:context=".Profile"
-        android:background="#0a3d62"
+        android:background="@color/biruw"
         android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/putuu"
-            android:layout_width="@dimen/dm200"
+            android:layout_width="@dimen/dm172"
             android:layout_height="@dimen/dm200"
             android:background="@drawable/pp"
             android:contentDescription="TODO"

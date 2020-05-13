@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.santisusanti.a10117098_santisusanti_sansapp.FriendList">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm56"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="Friend List"
+        android:textSize="@dimen/dm25"
+        android:textStyle="bold"
+        android:textColor="@color/item"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_nim"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:hint="NIM"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_nama"
+        android:hint="Nama"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_kelas"
+        android:hint="Kelas"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_telepon"
+        android:hint="Telepon"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="Email"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_sosmed"
+        android:hint="Sosial Media"
+        android:layout_marginStart="@dimen/dm25"
+        android:layout_marginEnd="@dimen/dm25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:layout_width="@dimen/dm0"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:text="Add"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="@dimen/dm0"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update"
+            android:text="Update"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="@dimen/dm0"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_hapus"
+            android:text="Hapus"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_peop"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

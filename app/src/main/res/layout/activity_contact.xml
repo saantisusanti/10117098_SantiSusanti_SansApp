@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruw"
+    tools:context="com.santisusanti.a10117098_santisusanti_sansapp.Contact">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm56"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_menu"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dm10"
+        android:layout_marginTop="@dimen/dm10"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm64"
+        android:text="Contact Me"
+        android:textColor="@color/item"
+        android:textSize="@dimen/dm36"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ig"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        app:srcCompat="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/ig2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm50"
+        android:hint="saantisusanti"
+        android:textColorHint="@color/putih"
+        android:textSize="@dimen/dm18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ig"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ig"
+        app:srcCompat="@drawable/gmail" />
+
+    <TextView
+        android:id="@+id/mail2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm18"
+        android:layout_marginTop="@dimen/dm56"
+        android:text="santisusanti@mahasiswa.unikom.ac.id"
+        android:textColor="@color/putih"
+        android:textSize="@dimen/dm18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/ig2" />
+
+    <ImageView
+        android:id="@+id/telp"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        app:srcCompat="@drawable/telepon" />
+
+    <TextView
+        android:id="@+id/telp2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm56"
+        android:text="081293355374"
+        android:textColor="@color/putih"
+        android:textSize="@dimen/dm18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/mail2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
